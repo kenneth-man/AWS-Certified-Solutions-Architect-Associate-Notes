@@ -1,0 +1,38 @@
+.bullet-text > strong,
+.yellowGreen {
+	color: yellowgreen;
+}
+
+.bullet-title > strong,
+.orange {
+	color: orange;
+}
+
+.lime {
+	color: lime;
+}
+
+.red {
+	color: red;
+}
+
+.aqua {
+	color: aqua;
+}
+
+.bullet-section {
+	margin-bottom: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.bullet-title {
+	font-size: 1.5rem;
+}
+
+.bullet-text {
+	margin-bottom: 0.25rem;
+	font-size: 1.25rem;
+}
+
