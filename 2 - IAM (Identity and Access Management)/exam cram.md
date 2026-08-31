@@ -102,7 +102,7 @@
 		- Collections of <strong>Users</strong> and have policies attached to them
 	</span>
 	<span class='bullet-text'>
-		- Not an identity and can't be a <strong>Principal</strong> in an IAM Policy
+		- Can't be a <strong>Principal</strong> in an IAM Policy
 	</span>
 	<span class='bullet-text'>
 		- Can't nest groups within groups
@@ -207,3 +207,8 @@
 		- Letting a <strong>User</strong> or <strong>Service</strong> act on behalf of another <strong>User</strong> without needing their account credentials
 	</span>
 </details>
+
+## Architecture Patterns
+![](./imgs/16.png)
+
+![](./imgs/17.png)
