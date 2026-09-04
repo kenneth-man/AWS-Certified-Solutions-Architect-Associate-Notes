@@ -35,7 +35,7 @@
 ![](./imgs/9.png)
 
 ## Amazon Machine Image (AMI)
-- ### When creating an EC2 Instance, the AMI determines the OS, Software and EBS volumes that are configured on the instance
+- ### When creating an EC2 Instance, the AMI determines the OS, Software and EBS volumes that are configured on the instance; like a blueprint
 ![](./imgs/10.png)
 
 ## Key Pairs (SSH)
@@ -109,3 +109,24 @@ EOF
 
 ### Using Roles with EC2 Instances
 ![](./imgs/18.png)
+
+## EC2 Placement Groups
+- ### 3 Ways to deploy EC2 Instance across availability zones...
+- ### `Cluster Placement Group`
+	- ### Deploying instances all in the same AZ
+![](./imgs/19.png)
+
+![](./imgs/20.png)
+
+- ### `Partition Placement Group`
+![](./imgs/21.png)
+
+![](./imgs/22.png)
+
+- ### `Spread Placement Group`
+![](./imgs/23.png)
+
+![](./imgs/24.png)
+
+- ### Example Placement Group Use Cases
+![](./imgs/25.png)
