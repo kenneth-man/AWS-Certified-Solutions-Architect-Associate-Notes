@@ -10,7 +10,7 @@
 - ### EC2 Instances are always deployed within a VPC
 
 - ### Elastic Network Interfaces (ENI) are attached to EC2 Instances
-	- ### They represent a virutal network card and hold IP Addresses
+	- ### They represent a virtual network card and hold IP Addresses
 
 ![](./imgs/5.png)
 
@@ -22,6 +22,12 @@
 - ### Elastic Network Adapter
 - ### Elastic Fabric Adapter
 ![](./imgs/7.png)
+
+![](./imgs/26.png)
+
+![](./imgs/27.png)
+
+![](./imgs/28.png)
 
 ## Elastic Block Store (EBS)
 - ### EBS Volumes are attached to EC2 Instances forpersistent storage
@@ -130,3 +136,30 @@ EOF
 
 - ### Example Placement Group Use Cases
 ![](./imgs/25.png)
+
+## Public, Private and Elastic IP Addresses
+![](./imgs/29.png)
+
+- ### Elastic IP Addresses are static and don't change
+
+- ### Public IP Addresses are dynamic and can change when instance is rebooted
+![](./imgs/30.png)
+
+## Network Address Translation (NAT) for Public IP Addresses
+- ### Handles the association from private to public (going out) and public to private (coming in) ip addresses in data packets
+- ### EC2 Instances can only see the private ip address via `ifconfig`, not the public ip address, so NAT is required to associate the private and public ips
+![](./imgs/31.png)
+
+## Public subnets, Private subnets and Bastion hosts
+- ### Use a Bastion host to connect to an instance in a private subnet from your machine
+	- ### A 'Bastion host' is just an instance in a public subnet that can communicate with an instance in a private subnet within the same VPC because they both have a private ip address within the same `CIDR` block range in their route tables
+- ### Public and private subnets have route tables
+	- ### Public subnets have a route to public internet via `Internet Gateway` `IGW`
+	- ### Private subnets don't have a route to public internet unless you add a `NAT Gateway` which allows one-way communication from private subnet instance to public internet, called `Outbound` ainternet ccess
+	- ### Each instance in a public subnet will have a public ip address
+![](./imgs/32.png)
+
+- ### E.g. Connectingt to private subnet instance with public subnet instance via SSH
+	- ### The private subnet instance was created with a rsa key pair
+	- ### that key pair private key was copied and pasted into a new file via `nano us-east-kp.pem`
+![](./imgs/33.png)
