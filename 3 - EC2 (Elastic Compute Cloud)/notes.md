@@ -155,7 +155,7 @@ EOF
 	- ### A 'Bastion host' is just an instance in a public subnet that can communicate with an instance in a private subnet within the same VPC because they both have a private ip address within the same `CIDR` block range in their route tables
 - ### Public and private subnets have route tables
 	- ### Public subnets have a route to public internet via `Internet Gateway` `IGW`
-	- ### Private subnets don't have a route to public internet unless you add a `NAT Gateway` which allows one-way communication from private subnet instance to public internet, called `Outbound` ainternet ccess
+	- ### Private subnets don't have a route to public internet unless you add a `NAT Gateway` which allows one-way communication from private subnet instance to public internet, called `Outbound` internet ccess
 	- ### Each instance in a public subnet will have a public ip address
 ![](./imgs/32.png)
 
@@ -163,3 +163,20 @@ EOF
 	- ### The private subnet instance was created with a rsa key pair
 	- ### that key pair private key was copied and pasted into a new file via `nano us-east-kp.pem`
 ![](./imgs/33.png)
+
+## NAT Gateways
+- ### Must be deployed in a public subnet
+- ### Then a route e.g. `0.0.0.0` that allows the NAT Gateway you created, must be added to the private subnet route table so that the privat subnet instance can send traffic to public internet
+- ### NAT Gateways receive traffic from private subnet instance and forwards it to public internet via elastic ip address
+![](./imgs/34.png)
+
+![](./imgs/35.png)
+
+![](./imgs/36.png)
+
+- ### The default is a public NAT Gateway, but you can also have a private NAT Gateway
+![](./imgs/37.png)
+
+- ### Route table = A set of routes that determine where network traffic from your subnets or gateways is directed
+
+![](./imgs/38.png)
