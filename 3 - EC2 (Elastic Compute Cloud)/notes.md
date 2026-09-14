@@ -180,3 +180,48 @@ EOF
 - ### Route table = A set of routes that determine where network traffic from your subnets or gateways is directed
 
 ![](./imgs/38.png)
+
+## Ec2 Instance Lifecycle
+![](./imgs/39.png)
+
+![](./imgs/40.png)
+
+![](./imgs/41.png)
+
+![](./imgs/42.png)
+
+![](./imgs/43.png)
+
+## AWS Nitro
+![](./imgs/44.png)
+
+![](./imgs/45.png)
+
+- ### AWS Nitro Enclaves
+	- ### For the most secure computing environment
+![](./imgs/46.png)
+
+## EC2 Instance Pricing
+![](./imgs/47.png)
+
+- ### Reserved Instances
+![](./imgs/48.png)
+
+![](./imgs/49.png)
+
+- ### Spot Instances
+ ![](./imgs/52.png)
+
+- ### Dedicated Instances and Hosts
+![](./imgs/53.png)
+
+- ### Savings Plans
+![](./imgs/51.png)
+
+- ### Capacity Blocks
+![](./imgs/50.png)
+
+## EC2 Istance Pricing Use Cases
+![](./imgs/54.png)
+
+![](./imgs/55.png)
