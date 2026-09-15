@@ -210,7 +210,7 @@ EOF
 ![](./imgs/49.png)
 
 - ### Spot Instances
- ![](./imgs/52.png)
+![](./imgs/52.png)
 
 - ### Dedicated Instances and Hosts
 ![](./imgs/53.png)

@@ -4,7 +4,7 @@
 			IAM
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- A global service used to control access to AWS resources
 	</span>
 	<span class='bullet-text'>
@@ -50,7 +50,7 @@
 			IAM is <strong>Eventually Consistent</strong>
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- Updates to IAM may not take effect immediately, so wait a bit before reading from IAM api
 	</span>
 </details>
@@ -78,7 +78,7 @@
 			IAM <strong>User</strong>
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- Entity that represents a person or service
 	</span>
 	<span class='bullet-text'>
@@ -98,7 +98,7 @@
 			IAM <strong>Group</strong>
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- Collections of <strong>Users</strong> and have policies attached to them
 	</span>
 	<span class='bullet-text'>
@@ -115,7 +115,7 @@
 			IAM <strong>Roles</strong>
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- <strong>Users</strong> or <strong>Services</strong> can assume a role to gain temporary security credentials given by <strong>AWS Security Token Service (STS)</strong>
 	</span>
 </details>
@@ -126,7 +126,7 @@
 			IAM <strong>Policies</strong>
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- Document to define permissions and can be applied to <strong>Users</strong>, <strong>Groups</strong> and <strong>Roles</strong>
 	</span>
 	<span class='bullet-text'>
@@ -166,7 +166,7 @@
 			IAM <strong>Principal</strong>
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- An entity such as a <strong>User</strong> or <strong>Service</strong> that can authenticate and make requests to access AWS Resources
 	</span>
 </details>
@@ -203,7 +203,7 @@
 			Delegate Permissions
 		</span>
 	</summary>
-	<span class='bullet-text'>
+	<span class='bullet-text definition'>
 		- Letting a <strong>User</strong> or <strong>Service</strong> act on behalf of another <strong>User</strong> without needing their account credentials
 	</span>
 </details>
