@@ -131,3 +131,8 @@
 </details>
 
 ## Architecture Patterns
+![](./imgs/65.png)
+
+![](./imgs/66.png)
+
+![](./imgs/67.png)
