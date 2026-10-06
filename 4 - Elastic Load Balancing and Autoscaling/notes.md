@@ -11,3 +11,14 @@
 ![](./imgs/5.png)
 
 ![](./imgs/6.png)
+
+## High Availability vs Fault Tolerance
+![](./imgs/7.png)
+
+![](./imgs/8.png)
+
+![](./imgs/9.png)
+
+![](./imgs/10.png)
+
+![](./imgs/11.png)
