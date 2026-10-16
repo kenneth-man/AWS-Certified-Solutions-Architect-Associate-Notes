@@ -22,3 +22,8 @@
 ![](./imgs/10.png)
 
 ![](./imgs/11.png)
+
+## Load Balancing
+![](./imgs/12.png)
+
+![](./imgs/13.png)
